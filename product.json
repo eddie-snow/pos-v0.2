@@ -1,0 +1,107 @@
+[
+    {
+        "id":1,
+        "name": "Energetico",
+        "price": 150,
+        "image": "img/1.jpg"
+    },
+    {
+        "id":2,
+        "name": "Leite",
+        "price": 100,
+        "image": "img/2.png"
+    },
+    {
+        "id":3,
+        "name": "Pizza",
+        "price": 700,
+        "image": "img/3.jpg"
+    },
+    {
+        "id":4,
+        "name": "Batata Frita",
+        "price": 50,
+        "image": "img/4.jpg"
+    },
+    {
+        "id":5,
+        "name": "Chocolate",
+        "price": 110,
+        "image": "img/5.jpeg"
+    },
+    {
+        "id":6,
+        "name": "Matutano",
+        "price": 105,
+        "image": "img/6.jpg"
+    },
+    {
+        "id":7,
+        "name": "Galinha Grelhado",
+        "price": 800,
+        "image": "img/7.jpeg"
+    },
+    {
+        "id":8,
+        "name": "Banana",
+        "price": 40,
+        "image": "img/8.jpg"
+    },
+    {
+        "id":9,
+        "name": "Ovo",
+        "price": 20,
+        "image": "img/9.jpeg"
+    },
+    {
+        "id":10,
+        "name": "Limao",
+        "price": 15,
+        "image": "img/10.jpg"
+    },
+    {
+        "id":11,
+        "name": "Iogurte",
+        "price": 35,
+        "image": "img/11.jpg"
+    },
+    {
+        "id":12,
+        "name": "Tomate",
+        "price": 16,
+        "image": "img/12.png"
+    },
+    {
+        "id":13,
+        "name": "Melancia",
+        "price": 80,
+        "image": "img/13.png"
+    },
+    {
+        "id":14,
+        "name": "Maca",
+        "price": 25,
+        "image": "img/14.jpg"
+    },
+    {
+        "id":15,
+        "name": "Melao",
+        "price": 150,
+        "image": "img/15.jpg"
+    },
+    {
+        "id":16,
+        "name": "Beringela",
+        "price": 60,
+        "image": "img/16.png"
+    },
+    {
+        "id":17,
+        "name": "Alface",
+        "price": 55,
+        "image": "img/17.png"
+    }
+
+
+]
+  

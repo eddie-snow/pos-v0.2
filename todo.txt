@@ -1,0 +1,18 @@
+-Total price calculator
+-recibo finish
+-pesquisar por nome, id, id scan bar code
+-categorias of products
+-documentacao explicando tudo
+-user friendly and intuitive fictures
+    click outside carinho fecha 
+    addicioanar item ao carinho, abre carinho
+-botao de limpar tudo
+-documentacao explicando tudo
+-integracao com api
+
+-admin mode where admin can make login, add worker, 
+create its categories, prices, etc
+
+-this is likely to be a fullscale app, 
+tell boss you are learning some electron and react native 
+to get the project done

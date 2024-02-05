@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+}
+.container{
+    /* background-color: aqua; */
+    width: 900px;
+    max-width: 90vw;/*so when we find a screen that is smaller than 900px, only goes to 90%*/
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header .icon-cart{
+    position: relative;
+}
+
+header .icon-cart span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;/*distance from span to icon*/
+    right: -20px;
+}
+
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 15px 10px #0009);
+}
+
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /*dividing it into 5 equal colums*/
+    gap: 15px;
+}
+
+.listProduct .item{
+    background-color: #eeeee6;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.listProduct .item h2{
+    font-weight: 500;
+    font: large;
+}
+
+.listProduct .item .price{
+    font-size: large;
+}
+
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto; /*same as: top: 0; right: 0;bottom: 0; -400px ->on the right side of screen and we cannot see it*/
+    display: grid;
+    grid-template-rows: 70px 1fr 70px ; 
+    transition: .5s;
+}
+
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+
+body.showCart .container{
+    transform: translateX(-250px);
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+ .price-calculator{
+    background-color: black;
+    border-top: 2px solid #E8BC0E;
+    display: grid;
+    font-weight: 500;
+    font-size: medium;
+    padding-left: 30px;
+    padding-top: 5px;
+    height: 70px;
+}
+.total-price-calculator{
+    font-size: larger;
+}
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 70px;
+}
+
+.cartTab .btn button, a{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .btn .close{
+    background-color: #eee;
+}
+.cartTab .btn .checkOut{
+    text-align: center;
+    text-decoration: none;
+    color: #eee;
+    padding-top: 10%;
+}
+
+.cartTab .listCard .item img{
+    width: 100%;
+}
+
+.cartTab .listCard .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCard .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCard .quantity span:nth-child(2){ /*the second span tag that contains the number*/
+    background-color: transparent;
+    color: #eee;
+}
+
+.listCard .item:nth-child(even){ /*when many items background will change*/
+    background-color: #eee1;
+}
+.listCard{ /*to not mess up the screen when many items are added*/
+    overflow: auto;
+}
+.listCard::-webkit-scrollbar{
+    width: 0;
+}
+
+@media screen and (max-width: 992px){ /*on ipad divide in 3 instead of 5*/
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 768px){ /*on mobile divide in 2 */
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

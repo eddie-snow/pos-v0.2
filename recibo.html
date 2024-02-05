@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recibo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            font-family: "Roboto Condensed", sans-serif;
+            margin: 0;
+        }
+            .checkoutlayout{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            padding: 20px;
+            }
+
+            .checkoutlayout .right {
+                background-color: #5358b3; 
+                border-radius: 20px;
+                padding: 40px;
+                color: #eee;
+            }
+
+            .checkoutlayout .right .form{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                border-bottom: 2px solid #7a7fe2;
+                padding-bottom: 20px;
+            }
+
+            .checkoutlayout .form .group:nth-child(-n+3){
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .checkoutlayout .form input,
+            .checkoutlayout .form select{
+                width: 100%;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                border-radius: 20px;
+                margin-top: 10px;
+                border: none;
+                background-color: #6a6fc9;
+                color: #eee;
+            }
+
+            .checkoutlayout .row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px;
+            }
+
+            .checkoutlayout .row div:nth-child(2){
+                font-weight: bold;
+                font-size: x-large;
+            }
+            .checkoutlayout .ckc-button{
+                background-color: aquamarine;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                font-size: large;
+            }
+            .returnCart{
+                padding: 10px;
+                border: 2px solid black;
+                width: 70%
+
+            }
+    </style>
+</head>
+<body>
+    <h1>Recibo</h1>
+    <div class="container">
+        <div class="checkoutlayout">
+            <div class="returnCart">
+                <div class="top">
+                    <ul><h3>Loja X</h3></ul>
+                        <li>Praia Plateua Rua Pedonal 5</li>
+                        <li>contact: contact@mail.com </li>
+                        <li>Phone: +238 9999999 </li>
+                    </ul> 
+                    ----------------------------------------<br>
+                    <span>Date: 05/12/2023</span> <br>
+                    <span>Atendente: atendente y</span> <br>
+                    ----------------------------------------<br>
+                    <span>cliente: nome do cliente </span> <br>
+                    <span>NIF: nif do cliente</span> <br>
+                    <span>telefone: telepone do cliente</span>
+                </div>
+                <div class="principal">
+                    <p>
+                    ----------------------------------------<br>
+                    produto: item 1 qtd: 1 $prc(total): 150(150)$<br>
+                    ----------------------------------------<br>
+                    produto: item 5 qtd: 2 $prc(total): 200(300)$<br>
+                    ----------------------------------------<br>
+                    produto: item 5 qtd: 2 $prc(total): 200(300)$<br>
+                    ----------------------------------------<br>
+                    ----------------------------------------<br>
+                    qtd total: 3 <br>
+                    sub total: 100$, tax(iva) 5%<br>
+                    ----------------------------------------<br>
+                    total: 105$
+                    </p>
+                </div>
+                <div class="down">
+                    ----------------------------------------<br>
+                    Obrigado por sua escolha e volte sempre !!!
+                </div>
+            </div>
+            
+
+            <div class="right">
+                <h1>CHECKOUT</h1>
+                <div class="form">
+                    <div class="group">
+                        <label for="">Nome do Cliente</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="group">
+                        <label for="">NIF</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="group">
+                        <label for="">Telefone</label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="return">
+                    <div class="row">
+                        <div>Quantidade Total</div>
+                        <div class="totalQuantity">10</div>
+                    </div>
+                    <div class="row">
+                        <div>Preço Total</div>
+                        <div class="totalQuantity">100$</div>
+                    </div>
+                    <a href="./index.html"><button class="ckc-button">confirmar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
